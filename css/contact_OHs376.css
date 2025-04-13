@@ -1,0 +1,79 @@
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    min-width: 200px;
+    flex-wrap: wrap;
+    
+}
+#button{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+#button:hover{
+    background-color: rgb(224, 49, 49);
+    
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 16px;
+
+}
+.form-group{
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 14px;
+}
+.form-element{
+    appearance: none;
+    outline:none;
+    border:non;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding:12px 16px;
+    background-color: #ffffff;
+    &:focus{
+        border: 1px solid rgb(168, 12, 207);
+        box-shadow: 0 0 5px rgb(169, 6, 202);
+    }
+}
+.legend{
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+textarea{
+    resize: none;
+    min-height: 100px;
+}
+.fieldset{
+    border:none;
+}
+input[type="submit"]{
+    width: 50%;
+    padding:10px;   
+    
+}
+Input:invalid , textarea:invalid{
+    border:2px solid rgb(180, 11, 11);
+}
+input:valid , textarea:valid{
+    border:2px solid green;
+}
